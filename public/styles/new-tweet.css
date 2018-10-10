@@ -1,0 +1,33 @@
+.new-tweet {
+  padding: 0px 20px;
+  border-radius: 10px;
+  border: 1px solid #d4d4d4;
+  background-color: #eeeeee;
+  width: 400px;
+  height: 150px;
+}
+
+.new-tweet textarea {
+  width: 360px;
+  height: 50px;
+  padding: 5px;
+}
+
+.new-tweet h2 {
+  border-bottom: 1px solid #000000;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.container .counter {
+  float: right;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.container .negativeError {
+  color: red;
+  float: right;
+  font-weight: 300;
+  font-style: italic;
+}
