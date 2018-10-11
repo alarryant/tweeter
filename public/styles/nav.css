@@ -5,6 +5,25 @@
   height: 80px;
   width: 100%;
   padding: 0px 2em;
+  z-index: 99998;
+}
+
+#nav-bar button {
+  border-radius: 5px;
+  border-color: black;
+  z-index: 99999;
+  float: right;
+  height: 60px;
+  width: 120px;
+  opacity: 0.7;
+  margin: 10px;
+  font-size: 1.25em;
+  color: #018e78;
+}
+
+#nav-bar button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 #nav-bar .logo {

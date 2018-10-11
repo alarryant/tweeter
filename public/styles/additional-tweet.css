@@ -1,14 +1,13 @@
-.additional-tweet {
-  margin: 10px 0px;
+.tweet {
+  margin: 25px 0px;
   border-radius: 10px;
   border: 1px solid #d4d4d4;
   background-color: #eeeeee;
   width: 400px;
-  height: 200px;
-  position: relative;
+  height: 250px;
 }
 
-.additional-tweet:hover {
+.tweet:hover {
   opacity: .60;
 }
 
@@ -16,53 +15,57 @@
   content: ;
 }*/
 
-.additional-tweet textarea {
+.tweet textarea {
   background-color: white;
   width: 360px;
   height: 50px;
   padding: 5px;
+
 }
 
-.additional-tweet header {
-  height: 80px;
+.tweet header {
+  height: 60px;
   width: 400px;
 }
 
-.additional-tweet h1 {
+.tweet h1 {
   display: inline;
   position: relative;
-  line-height: 60px;
+  line-height: 75px;
 }
 
-.additional-tweet img {
+.tweet img {
   display: inline;
-  padding: 15px 10px;
+  padding: 20px 10px;
   float: left;
 }
 
-.additional-tweet p {
+.tweet h5 {
   float: right;
   padding-right: 10px;
   color: #bbbbbb;
 }
 
-.additional-tweet footer {
+.tweet footer {
   border-top: 1px solid #d4d4d4;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: white;
   width: 398px;
-  height: 25px;
+  height: 35px;
   font-size: 0.75em;
   font-style: italic;
   font-weight: 300;
-  padding: 5px 10px;
+  padding: 10px 15px;
 }
 
-.additional-tweet .feed {
+.tweet p {
   background-color: white;
-  height: 93px;
+  height: 125px;
   font-weight: 300;
   padding: 35px 20px;
   font-size: 1.5em;
+  margin-top: 28px;
+  margin-bottom: 0px;
+  word-wrap: break-word;
 }

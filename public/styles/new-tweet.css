@@ -5,12 +5,14 @@
   background-color: #eeeeee;
   width: 400px;
   height: 150px;
+  display: none;
 }
 
 .new-tweet textarea {
   width: 360px;
   height: 50px;
   padding: 5px;
+  resize: none;
 }
 
 .new-tweet h2 {
@@ -30,4 +32,17 @@
   float: right;
   font-weight: 300;
   font-style: italic;
+}
+
+.container .error {
+  background-color: #ff9797;
+  color: white;
+  height: 50px;
+  width: 400px;
+  padding: 15px 45px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  display: none;
+  font-weight: 700;
+  font-size: 1em;
 }

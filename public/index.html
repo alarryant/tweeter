@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="/styles/additional-tweet.css" type="text/css" />
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -27,31 +27,22 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button type="button">Compose</button>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <div class="error"></div>
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form action="/tweets" method="post">
-          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <textarea id="scroll" name="text" placeholder="What are you humming about?"></textarea>
           <input type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
-      <article class="additional-tweet">
-        <header>
-          <img src="https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png">
-          <h1>Bill Fields</h1>
-          <p>@MrFields</p>
-        </header>
-        <section class="feed">
-        Little tweet here
-        </section>
-        <footer>
-        10 days ago
-        </footer>
-      </article>
+      <section id="tweets-container">
+      </section>
     </main>
   </body>
 </html>
