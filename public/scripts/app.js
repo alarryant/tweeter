@@ -1,35 +1,20 @@
-const tweetData = {
-  "user": {
-    "name": "Newton",
-    "avatars": {
-      "small":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_50.png",
-      "regular": "https://vanillicon.com/788e533873e80d2002fa14e1412b4188.png",
-      "large":   "https://vanillicon.com/788e533873e80d2002fa14e1412b4188_200.png"
-    },
-    "handle": "@SirIsaac"
-  },
-  "content": {
-    "text": "If I have seen further it is by standing on the shoulders of giants"
-  },
-  "created_at": 1461116232227
-}
-
 $(document).ready(function () {
+
   function createTweetElement({ user: { avatars, name, handle }, content, created_at }) {
+    const newDate = new Date(created_at); // converts Unix time to legible date
     const $article = $('<article>').addClass("tweet");
     const $header = $('<header>');
     const $image = $('<img>').attr('src', avatars.small);
     const $headerOne = $('<h1>').text(name);
     const $headerFive = $('<h5>').text(handle);
     const $paragraph = $('<p>').text(content.text);
-    const $footer = $('<footer>').text(created_at);
+    const $footer = $('<footer>').text(`Posted on ${newDate}.`);
 
+    // construct header components first so that everything nests correctly
     let $headerComponents = $header.append($image).append($headerOne).append($headerFive);
+    // final assembly
     return $article.append($headerComponents).append($paragraph).append($footer);
   }
-
-  var $tweet = createTweetElement(tweetData);
-  $('#tweets-container').append($tweet);
 
   function renderTweets(tweets) {
     $('#tweets-container').empty();
@@ -42,12 +27,12 @@ $(document).ready(function () {
   function loadTweets() {
     $.ajax('/tweets', { method: 'GET', success:
       function (tweets) {
-        renderTweets(tweets.reverse());
+        renderTweets(tweets.reverse()); // reverse so newest tweet appears at the top of the feed
       }
     });
   }
 
-  loadTweets();
+  loadTweets(); // load existing tweets first
 
   $('form').on('submit', (event) => {
     event.preventDefault();
@@ -61,12 +46,12 @@ $(document).ready(function () {
     else if (input.length > 140) {
       $(".error").text("ERROR! Too many characters.").slideDown("slow");
     } else {
-      $(".error").slideUp("slow")
+      $(".error").slideUp("slow");
       $.ajax('/tweets', {method: 'POST', data: data, success:
         loadTweets
       });
-      $("textarea[name=text]").val('');
-      $(".counter").text('140');
+      $("textarea[name=text]").val(''); // clear text area after submission
+      $(".counter").text('140'); // reset counter after submission
     }
   });
 
