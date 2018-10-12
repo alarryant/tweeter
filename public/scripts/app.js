@@ -9,13 +9,14 @@ $(document).ready(function () {
     const $headerFive = $('<h5>').text(handle);
     const $paragraph = $('<p>').text(content.text);
     const $footer = $('<footer>').addClass("dateStamp").text(`Posted ${time}.`);
-    const $flagIcon = $('<div class="social" id="flag"><i class="fab fa-font-awesome-flag"></i></div>');
-    const $shareIcon = $('<div class="social" id="share"><i class="fas fa-retweet"></i></div>');
-    const $heartIcon = $('<div class="social" id="heart"><i class="fas fa-heart"></i></div>');
+    const $flagIcon = $('<div class="social flag"><i class="fab fa-font-awesome-flag"></i></div>');
+    const $shareIcon = $('<div class="social share"><i class="fas fa-retweet"></i></div>');
+    const $heartIcon = $('<div class="heart"><i class="fas fa-heart"></i></div>');
+    const $counter = $('<span>').addClass("socialCounter");
 
     // construct header components first so that everything nests correctly
     let $headerComponents = $header.append($image).append($headerOne).append($headerFive);
-    let $footerComponents = $footer.append($flagIcon).append($shareIcon).append($heartIcon);
+    let $footerComponents = $footer.append($flagIcon).append($shareIcon).append($heartIcon).append($counter);
     // final assembly
     return $article.append($headerComponents).append($paragraph).append($footerComponents);
   }

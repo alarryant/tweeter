@@ -1,11 +1,12 @@
 .new-tweet {
   padding: 0px 20px;
   border-radius: 10px;
-  border: 1px solid #d4d4d4;
-  background-color: #eeeeee;
+  border: 1px solid #ff9696;
+  background-color: #f7bcbc;
   width: 400px;
   height: 150px;
   display: none;
+  font-family: 'Gaegu', sans-serif;
 }
 
 .new-tweet textarea {
@@ -13,10 +14,13 @@
   height: 50px;
   padding: 5px;
   resize: none;
+  font-family: 'Gaegu', sans-serif;
+  border: none;
 }
 
 .new-tweet h2 {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid white;
+  color: white;
   margin-top: 10px;
   font-weight: bold;
 }
