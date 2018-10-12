@@ -1,8 +1,8 @@
 #nav-bar {
-  background-color: #00a087;
+  background-color: #f7bcbc;
   color: #e8fdff;
   position: fixed;
-  height: 80px;
+  height: 100px;
   width: 100%;
   padding: 0px 2em;
   z-index: 99998;
@@ -11,28 +11,30 @@
 #nav-bar .logo {
   width: 80px;
   height: 80px;
+  margin-top: 10px;
   float: left;
 }
 
 #nav-bar .header {
   float: left;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 80px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 #nav-bar button {
   border-radius: 5px;
-  border-color: black;
+  border-color: #ff9696;
   z-index: 99999;
   float: right;
   height: 60px;
   width: 120px;
   opacity: 0.7;
-  margin: 10px;
+  margin: 20px;
   font-size: 1.25em;
-  color: #018e78;
+  color: #ff9696;
 }
 
 #nav-bar button:hover {
