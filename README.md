@@ -1,4 +1,4 @@
-# Tweeter Project
+# Tweeter Project (Borker edition)
 
 Borker is a simple, single-page Twitter clone. It is full stack web application built with HTML, CSS, JS, jQuery, AJAX, Node, Express, and MongoDB.
 
