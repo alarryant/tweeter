@@ -29,6 +29,8 @@
   float: right;
   font-weight: 300;
   font-style: italic;
+  color: white;
+  font-weight: 700;
 }
 
 .container .negativeError {
@@ -43,10 +45,10 @@
   color: white;
   height: 50px;
   width: 400px;
-  padding: 15px 45px;
+  padding: 15px 27px;
   margin-bottom: 15px;
   border-radius: 10px;
   display: none;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1.15em;
 }

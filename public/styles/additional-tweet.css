@@ -21,18 +21,19 @@
 }
 
 .tweet header {
-  height: 60px;
+  height: 75px;
   width: 400px;
 }
 
 .tweet h1 {
-  display: inline;
+  flex-grow: 1;
+  display: inline-block;
+  max-width: 200px;
+  padding: 0px 5px;
   font-family: 'Gaegu', sans-serif;
   position: relative;
-  line-height: 90px;
-  font-size: 2em;
+  line-height: 25px;
   color: #ffc1c1;
-  margin-top: 15px;
   text-shadow: -1px -1px 0px white,
                 0px -1px 0px white,
                 1px -1px 0px white,
@@ -45,7 +46,7 @@
 
 .tweet img {
   display: inline;
-  padding: 20px 10px;
+  padding: 20px 15px;
   float: left;
 }
 
@@ -69,6 +70,7 @@
   font-style: italic;
   font-weight: 300;
   font-family: 'Gaegu', sans-serif;
+  line-height: 17px;
 }
 
 .tweet .dateStamp {
@@ -79,8 +81,9 @@
   color: #ff9696;
   float: right;
   display: none;
-  font-size: 1.25em;
+  font-size: 1em;
   padding: 0px 4px;
+  line-height: 15px;
 }
 
 .tweet:hover .heart {
@@ -91,8 +94,9 @@
   color: #ff9696;
   float: right;
   display: none;
-  font-size: 1.25em;
+  font-size: 1em;
   padding: 0px 4px;
+  line-height: 15px;
 }
 
 .heart.clicked {
@@ -102,7 +106,7 @@
 
 .socialCounter {
   display: none;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .socialCounter.clicked {
@@ -116,11 +120,10 @@
 
 .tweet p {
   background-color: white;
-  height: 125px;
+  height: 122px;
   font-weight: 300;
   padding: 35px 20px;
   font-size: 1em;
-  margin-top: 28px;
   margin-bottom: 0px;
   word-wrap: break-word;
 }
