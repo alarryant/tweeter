@@ -60,7 +60,7 @@ $(document).ready(function () {
     }
   });
 
-// compose button
+  // compose button
   $("button").click(function(){
     $(".new-tweet").slideToggle("slow");
     $("textarea").focus();
