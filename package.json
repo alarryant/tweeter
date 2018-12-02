@@ -1,12 +1,14 @@
 {
   "name": "tweeter",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "6.4.1"
+  },
   "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
+    "start": "node server/index.js"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
@@ -15,9 +17,7 @@
     "chance": "^1.0.2",
     "express": "^4.13.4",
     "md5": "^2.1.0",
-    "mongodb": "^2.2.33"
-  },
-  "devDependencies": {
-    "nodemon": "^1.9.2"
+    "mongodb": "^2.2.33",
+    "event-stream": "3.3.4"
   }
 }
