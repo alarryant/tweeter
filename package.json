@@ -1,10 +1,6 @@
 {
   "name": "tweeter",
   "version": "1.0.0",
-  "engines": {
-    "node": "8.9.4",
-    "npm": "6.4.1"
-  },
   "description": "A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz",
   "main": "server/index.js",
   "scripts": {
