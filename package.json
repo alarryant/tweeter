@@ -15,9 +15,10 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
+    "dotenv": "^6.1.0",
+    "event-stream": "3.3.4",
     "express": "^4.13.4",
     "md5": "^2.1.0",
-    "mongodb": "^2.2.33",
-    "event-stream": "3.3.4"
+    "mongodb": "^2.2.33"
   }
 }
